@@ -1,66 +1,56 @@
-Here's the README document for your Fitness ToDo Application, crafted based on the provided details and structured in English:
+# ToDo List Application
 
----
-
-# Fitness ToDo Application
-
-The Fitness ToDo Application is a mobile utility designed to act as your personal fitness companion, helping you efficiently plan, monitor, and adhere to your fitness goals. Leveraging the capabilities of modern smartphones, this app offers a user-friendly platform for organizing various exercises and health programs, making your fitness journey well-organized and enjoyable.
+The ToDo List Application is a dynamic and feature-rich task management tool designed for mobile platforms. It allows users to create tasks, attach images, and view live updates on device information like battery level and network status. This application is built using React Native, showcasing the use of AsyncStorage for data persistence, expo-image-picker for image uploading, and react-native-maps for live location tagging.
 
 ## Features
 
-- **Structured Workout Plans:** Efficiently plan your workouts with structured plans.
-- **Daily Step Tracking:** Track your daily steps with the built-in pedometer function.
-- **Specific Fitness Goals:** Set and monitor specific fitness goals to stay motivated.
-- **Image Capture:** Capture post-workout selfies or photos of your surroundings during exercise.
-- **Calendar Logging:** Log your fitness activities on a calendar for better planning.
-- **Location Tracking:** Use the app’s location services to mark jogging routes or exercise spots.
+- **Task Management:** Users can create, view, edit, and delete tasks.
+- **Image Uploading:** Supports adding images to tasks from the camera or gallery.
+- **Live Location Tagging:** Tasks can be tagged with the user's current location, viewable on a map.
+- **Device Information Display:** Shows current battery level and network status.
+- **Persistent Storage:** Tasks and associated data are saved locally, ensuring data persistence across sessions.
 
-## Clone the Project
+## Getting Started
 
-To get started with the Fitness ToDo Application, follow these steps to clone the project onto your local machine:
+To get started with the ToDo List Application, follow these steps:
+
+1. **Clone the Repository:**
 
 ```bash
-git clone https://github.com/chenyuxuan2002/FitnessToDoApp.git
+git clone https://github.com/jingxiangaaaa/list
 ```
 
-## Installation
+2. **Install Dependencies:**
 
-After cloning the project, navigate to the project directory and install the necessary dependencies:
+Navigate to the project directory and install the required dependencies.
 
 ```bash
-cd FitnessToDoApp
+cd list
 npm install
 ```
 
-Dependencies can also be installed in Expo Go with these commands:
+3. **Start the Application:**
 
-```bash
-expo install expo-image-picker
-expo install expo-location
-expo install @react-native-async-storage/async-storage
-expo install expo-sensors
-npm install @react-native-community/datetimepicker
-```
-
-## Run the Application
-
-Once dependencies are installed, you're ready to launch the application. Ensure your mobile device has Expo Go installed and is connected to the same network as your development machine. Start the Expo development server with:
+To start the application, run the following command:
 
 ```bash
 npx expo start
 ```
 
-Open the Fitness ToDo Application by scanning the QR code displayed in the terminal with the Expo Go app on your mobile device.
+For running the application in a local network other than the current one, set the `REACT_NATIVE_PACKAGER_HOSTNAME` environment variable to your machine's IP address, and start the application with `--lan` option:
+
+```bash
+$env:REACT_NATIVE_PACKAGER_HOSTNAME='YOUR_MACHINE_IP'
+npx expo start --lan
+```
 
 ## Usage
 
-The Fitness ToDo Application offers a range of functionalities to help you track your fitness journey:
+After starting the application, you can:
 
-- **Organize Your Workouts:** Plan your workouts efficiently with structured plans.
-- **Track Your Steps:** Monitor your daily activity with the pedometer feature.
-- **Set Fitness Goals:** Stay motivated by setting and tracking specific fitness objectives.
-- **Capture Images:** Enrich your fitness log with photos of your workouts or surroundings.
-- **Log Activities on Calendar:** Better plan and review your fitness activities with calendar logging.
-- **Record Locations:** Enhance your activities with geographical context by marking jogging routes or exercise locations.
+- Create new tasks by entering text and optionally attaching images.
+- Edit existing tasks to update text or images.
+- Delete tasks you no longer need.
+- View your tasks' associated locations on a map by clicking on the location tag.
+- The app automatically updates and displays the current battery level and network status.
 
-This README provides an overview of the Fitness ToDo Application, emphasizing its key features and the steps required to start using the app. The document outlines how to clone, install, and run the application, guiding users through the setup process and highlighting the app's primary functionalities.
